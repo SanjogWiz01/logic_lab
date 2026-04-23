@@ -11,7 +11,7 @@ This is not a course. It is a structured self-study log where I work through log
 The goal is simple: by the end of 45 days, be able to look at a problem, break it down, and write clean Python code to solve it without freezing up.
 
 ---
-
+ 
 ## Repo structure
 
 ```
