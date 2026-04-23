@@ -117,4 +117,4 @@ I want to build the kind of thinking that lets me break down any problem into sm
 
 ---
 
-*Started: [your start date] · Target completion: 45 days later*
+*Started: [your start date] · Target completion: 45 days later* 
