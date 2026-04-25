@@ -15,4 +15,4 @@ def longest_unique_substring(s):
 
 
 # Test
-print(longest_unique_substring("abcabcbb"))  # Output: 3
+print(longest_unique_substring("abcabcbb")) 
