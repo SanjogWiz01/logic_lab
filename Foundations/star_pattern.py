@@ -6,4 +6,4 @@ print("Vertical star")
 n=int(input(" ulto kati ota ko"))
 for i in range(n , 0):
     print(i * "*") 
-    
+print("done")
