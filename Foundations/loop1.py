@@ -11,4 +11,4 @@ def funct(n):
  
 fact=int(input(" kati ko fact chaiyoo"))
 answer=funct(fact)
-print(answer).  
+print(answer)
