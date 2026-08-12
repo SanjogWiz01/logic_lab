@@ -1,14 +1,22 @@
-'''#
-# num = ['1','2','3']
- #for num in num:
- #   print(f"i am eating {num}") '''
-def funct(n):
-    if (n==0 or n==1):
-     return 1
-    else:
-       return n * funct(n-1)
+"""Small factorial practice exercise."""
 
- 
-fact=int(input(" kati ko fact chaiyoo"))
-answer=funct(fact)
-print(answer)
+
+def factorial(n):
+    """Return ``n!`` for a non-negative integer."""
+    if not isinstance(n, int) or isinstance(n, bool):
+        raise TypeError("n must be an integer")
+    if n < 0:
+        raise ValueError("n must be non-negative")
+
+    result = 1
+    for value in range(2, n + 1):
+        result *= value
+    return result
+
+
+# Keep the original exercise runnable without prompting during imports.
+funct = factorial
+
+
+if __name__ == "__main__":
+    print(factorial(int(input("Enter a number for its factorial: "))))

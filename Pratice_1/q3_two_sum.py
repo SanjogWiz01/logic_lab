@@ -1,4 +1,5 @@
 def two_sum(nums, tar):
+    """Return indices of the first pair adding to ``tar``, or ``[]``."""
     d = {}
 
     for i in range(len(nums)):
@@ -13,7 +14,5 @@ def two_sum(nums, tar):
     return []
 
 
-nums = [2, 7, 11, 15]
-tar = 9
-
-print(two_sum(nums, tar))
+if __name__ == "__main__":
+    print(two_sum([2, 7, 11, 15], 9))

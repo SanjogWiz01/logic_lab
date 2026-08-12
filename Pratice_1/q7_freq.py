@@ -19,6 +19,5 @@ def most_freq(lst):
     return ans
 
 
-a = [4, 1, 2, 2, 3, 3, 3, 4]
-
-print(most_freq(a))
+if __name__ == "__main__":
+    print(most_freq([4, 1, 2, 2, 3, 3, 3, 4]))
