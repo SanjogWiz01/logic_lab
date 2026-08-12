@@ -2,7 +2,7 @@ def flat(lst):
     ans = []
 
     for x in lst:
-        if type(x) == list:
+        if isinstance(x, list):
             small = flat(x)
             for y in small:
                 ans.append(y)
@@ -12,6 +12,5 @@ def flat(lst):
     return ans
 
 
-a = [[1, [2, 3]], [4, [5, [6]]]]
-
-print(flat(a))
+if __name__ == "__main__":
+    print(flat([[1, [2, 3]], [4, [5, [6]]]]))

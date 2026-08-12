@@ -16,6 +16,5 @@ def grp(words):
     return ans
 
 
-wds = ["eat", "tea", "tan", "ate", "nat", "bat"]
-
-print(grp(wds))
+if __name__ == "__main__":
+    print(grp(["eat", "tea", "tan", "ate", "nat", "bat"]))
