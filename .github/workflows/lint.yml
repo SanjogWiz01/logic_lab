@@ -1,4 +1,4 @@
-name: Python tests
+name: Lint
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: ["main", "master"]
 
 jobs:
-  test:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,18 +23,17 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
-          key: "pip-${{ runner.os }}-py-${{ matrix.python-version || '3.11' }}-${{ hashFiles('**/requirements.txt') }}"
+          key: "pip-${{ runner.os }}-py-${{ matrix.python-version || '3.11' }}-${{ hashFiles('**/pyproject.toml', '**/requirements.txt') }}"
           restore-keys: |
             pip-${{ runner.os }}-py-
 
-      - name: Install dependencies
+      - name: Install linting tools
         run: |
-          if [ -f requirements.txt ]; then
-            python -m pip install --upgrade pip
-            pip install -r requirements.txt
-          fi
+          python -m pip install --upgrade pip
+          pip install ruff black isort
 
-      - name: Run tests
-        run: python -m unittest discover -s tests
-        env:
-          PYTHONUNBUFFERED: 1
+      - name: Run ruff
+        run: ruff check .
+
+      - name: Check black formatting
+        run: black --check .
