@@ -1,6 +1,1 @@
-
-
-
-
-
 """Practice solutions package."""
