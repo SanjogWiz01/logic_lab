@@ -82,3 +82,9 @@ Update repo documentation
 | Separate Q3-Q7 files | Done |
 | Basic automated tests | Added |
 | Learning log | Added |
+
+## Quick commands
+
+- Run tests: python -m unittest discover -s tests
+- Lint locally: pip install ruff black isort && ruff check . && black --check .
+
