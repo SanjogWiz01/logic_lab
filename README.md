@@ -19,7 +19,7 @@ logic_lab/
 The folder name `Pratice_1` is kept as-is because that is the current working
 folder used in this repo.
 
-## Daily Practice Plan
+## Daily Practice Plan 
 
 Each day lives in its own folder inside `DAY 1 TO 15/` and holds four files.
 
