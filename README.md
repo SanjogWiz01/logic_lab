@@ -107,5 +107,5 @@ Update repo documentation
 ## Quick commands
 
 - Run tests: python -m unittest discover -s tests
-- Lint locally: pip install ruff black isort && ruff check . && black --check .
+- Lint locally: pip install ruff black isort && ruff check . && black --check.      
 
