@@ -64,7 +64,6 @@ Run a single short practice file:
 
 ```powershell
 python Pratice_1\q3_two_sum.py
-```
 
 ## Run Tests
 
