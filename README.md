@@ -1,5 +1,4 @@
-# logic-lab-py
-
+# logic-lab-py.   
 Python practice repo for building problem-solving confidence one small program at a
 time.
 
