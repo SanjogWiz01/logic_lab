@@ -7,7 +7,6 @@ The goal is simple: write code regularly, keep the solutions easy to read, and u
 Git history as proof of daily progress.
 
 ## Current Structure
-
 ```text
 logic_lab/
 ├── DAY 1 TO 15/              # Day 1-7 practice files, four per day
