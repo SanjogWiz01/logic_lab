@@ -1,6 +1,5 @@
 # logic-lab-py
-Python practice repo for building problem-solving confidence one small program at a
-time.
+Python practice repo for building problem-solving confidence one small program at a time.
 
 The goal is simple: write code regularly, keep the solutions easy to read, and use
 Git history as proof of daily progress.
